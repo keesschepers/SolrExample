@@ -1,0 +1,28 @@
+<?= ~$this->doctype('XHTML1_TRANSITIONAL') ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <?php
+        $this->headLink()
+                ->prependStylesheet($this->baseUrl() . '/css/jquery-ui/smoothness/jquery-ui-1.8.16.custom.css')
+                ->prependStylesheet($this->baseUrl() . '/css/ui.jqgrid.css')
+                ->prependStylesheet($this->baseUrl() . '/css/jquery.qtip.css')
+                ->prependStylesheet($this->baseUrl() . '/css/application.css')
+                ->prependStylesheet($this->baseUrl() . '/css/forms.css');
+
+        $this->headTitle('SolrExample for ZF/Doctrine2 developers!', Zend_View_Helper_Placeholder_Container_Abstract::PREPEND)->setSeparator(' - ');
+        ?>
+
+        <?= ~$this->headTitle() ?>	
+        <?= ~$this->headStyle() ?>
+        <?= ~$this->headLink() ?> 
+        <?= ~$this->headMeta() ?> 
+    </head>
+
+    <body>         
+        <div id="main-container">
+            <h1>Solr Example</h1>
+            <?= ~$this->layout()->content ?>
+        </div>
+        <?= ~$this->headScript() ?>            
+    </body>
+</html>

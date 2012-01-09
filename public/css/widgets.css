@@ -1,0 +1,38 @@
+#mainContainer #content {
+    padding: 10px 0px 0px 10px;
+}
+
+.widgets ul {
+    list-style: none;
+    margin:0px; 
+    padding:5px;    
+    overflow:hidden;
+}
+.widgets ul li {
+    margin-bottom: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+.widget-container {
+    width: 318px;
+}
+
+.widget-content {
+    padding: 5px;    
+}
+.widget-toolbar {
+    border-bottom: 1px dotted black;       
+}
+.widget-toolbar li {
+    cursor: pointer;
+}
+.widget-toolbar li.ui-state-default {
+    float:right;
+    margin: 2px 2px 4px 2px;    
+}
+
+.widget-header {
+    padding: 3px;
+    font-size: 11px;
+}

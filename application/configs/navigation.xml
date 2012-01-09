@@ -1,0 +1,148 @@
+<nav>
+    <mainnav>
+        <contact>
+            <label>Contact</label>            
+            <route>contact</route>
+            <resource>default_contact_index</resource>
+        </contact>
+        
+        <information>
+            <label>Information</label>            
+            <route>information</route>
+            <resource>default_information_index</resource>
+        </information>
+        
+        <photos>
+            <label>Photoalbum</label>
+            <controller>photoalbum</controller>
+            <action>index</action>    
+            <resource>default_photoalbum_index</resource>
+        </photos>
+        
+        <calendar>
+            <label>Calendar</label>
+            <route>calendar</route>
+            <resource>default_calendar_index</resource>
+        </calendar>
+        
+        <sponsors>
+            <label>Sponsors</label>
+            <controller>index</controller>
+            <action>sponsors</action>
+            <route>default</route>
+        </sponsors>
+    </mainnav>
+    <subnav>
+        <subscribe>
+            <label>Subscription</label>
+            <route>subscribe</route>
+            <resource>default_subscription_index</resource>
+            <pages>
+                <form>
+                    <label>Subscription form</label>
+                    <controller>subscription</controller>
+                    <action>index</action>
+                    <route>subscribe</route>
+                    <resource>default_subscription_index</resource>
+                </form>
+                
+                <medical>
+                    <label>Medical aprovement</label>
+                    <controller>subscription</controller>
+                    <action>content</action>
+                    <params>
+                        <page>medical</page>
+                    </params>
+                    <route>default</route>
+                    <resource>default_subscription_content</resource>
+                </medical>
+                
+                <classes>
+                    <label>Driver classes</label>
+                    <controller>subscription</controller>
+                    <action>classes</action>
+                    <route>default</route>                
+                    <resource>default_subscription_classes</resource>
+                </classes>
+            </pages>
+        </subscribe>
+        
+        <results>
+            <label>Results</label>
+            <controller>results</controller>
+            <action>index</action>
+            <route>default</route>
+            <resource>default_results_index</resource>
+        </results>
+        
+        <championship>
+            <label>Championship</label>
+            <controller>championship</controller>
+            <action>index</action>
+            <route>default</route>
+            <resource>default_championship_index</resource>
+        </championship>
+        
+        <regulations>
+            <label>Regulations</label>
+            <controller>content</controller>
+            <action>regulations</action>
+            <route>default</route>
+            <resource>default_content_regulations</resource>
+        </regulations>
+        
+        <faq>
+            <label>FAQ</label>
+            <controller>faq</controller>
+            <action>index</action>
+            <route>default</route>
+            <resource>default_faq_index</resource>
+        </faq>
+        
+        <admin>
+            <label>Admin</label>
+            <controller>permission</controller>
+            <action>permissions</action>
+            <route>default</route>
+            <resource>default_permission_permissions</resource>
+            
+            <pages>
+                
+                <usermanagement>
+                    <label>User management</label>
+                    <controller>admin-user</controller>
+                    <action>index</action>
+                    <resource>default_admin-user_index</resource>
+                </usermanagement>
+                
+                <subscriptionclasses>
+                    <label>Subscription classes</label>
+                    <controller>admin-subscription-class</controller>
+                    <action>index</action>
+                    <resource>default_admin-subscription-class_index</resource>
+                </subscriptionclasses>
+                
+                <newsletters>
+                    <label>Newsletters</label>
+                    <controller>admin-newsletter</controller>
+                    <action>index</action>
+                    <resource>default_admin-newsletter_index</resource>
+                </newsletters>
+                
+                <calendar>
+                    <label>Calendar</label>
+                    <controller>calendar</controller>
+                    <action>list</action>
+                    <resource>default_calendar_list</resource>
+                </calendar>
+                
+                <eventtypes>
+                    <label>Event types</label>
+                    <controller>admin-event-types</controller>
+                    <action>index</action>
+                    <resource>default_admin-event-types_index</resource>
+                </eventtypes>
+            </pages>
+        </admin>
+    </subnav>
+</nav>
