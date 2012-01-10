@@ -1,1 +1,5 @@
-<?=~$this->mysqlgrid->getHTML()?>
+<p>Select a grid in order to compare the speed:</p>
+<ul>
+    <li><a href="<?=$this->url(array('action' => 'mysql-grid'))?>">MySQL grid</a></li>
+    <li><a href="<?=$this->url(array('action' => 'solr-grid'))?>">SolR grid</a></li>
+</ul>

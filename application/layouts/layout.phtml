@@ -20,7 +20,11 @@
 
     <body>         
         <div id="main-container">
-            <h1>Solr Example</h1>
+            <h1>SolrExample application</h1>
+            <div class="navigation">
+                <a class="button" href="<?=$this->url(array('action' => 'mysql-grid'))?>">MySQL-Grid</a>
+                <a class="button" href="<?=$this->url(array('action' => 'solr-grid'))?>">Solr-Grid</a>
+            </div>
             <?= ~$this->layout()->content ?>
         </div>
         <?= ~$this->headScript() ?>            

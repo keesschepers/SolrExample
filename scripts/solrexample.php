@@ -2,10 +2,7 @@
 require_once __DIR__ . '/bootstrap.php';
 
 // Console
-$cli = new \Symfony\Component\Console\Application (
-    'Solrexample command line interface',
-    trim(file_get_contents(APPLICATION_PATH . '/../VERSION'))
-);
+$cli = new \Symfony\Component\Console\Application ('Solrexample command line interface');
 
 try {
     // Bootstrapping Console HelperSet

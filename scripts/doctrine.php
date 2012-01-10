@@ -30,10 +30,7 @@ $bootstrap = $application->bootstrap()->getBootstrap();
 $container = $bootstrap->getResource('doctrine');
 
 // Console
-$cli = new \Symfony\Component\Console\Application(
-    'Doctrine Command Line Interface',
-    \Doctrine\Common\Version::VERSION
-);
+$cli = new \Symfony\Component\Console\Application('Doctrine Command Line Interface');
 
 try {
     // Bootstrapping Console HelperSet
